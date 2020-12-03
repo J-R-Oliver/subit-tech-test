@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres
+    container_name: subit-postgres
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: subit_tech_test
+
+  node:
+    build:
+      context: .
+    container_name: subit-node
+    restart: unless-stopped
+    environment:
+      DB_HOST: postgres
+    depends_on:
+      - postgres
+    ports:
+      - 9090:9090

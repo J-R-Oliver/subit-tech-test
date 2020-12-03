@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres
+    container_name: subit-postgres-test
+    restart: unless-stopped
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: secret
+      POSTGRES_DB: subit_tech_test
