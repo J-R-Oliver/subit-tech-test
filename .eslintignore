@@ -1,0 +1,9 @@
+# modules
+node_modules
+
+# build artefacts
+build
+coverage
+
+# definition files
+*.d.ts

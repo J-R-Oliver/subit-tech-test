@@ -1,0 +1,43 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "prettier",
+    "jest",
+    "jest-formatting",
+    "security"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "airbnb-base",
+    "prettier",
+    "plugin:import/typescript",
+    "plugin:jest/recommended",
+    "plugin:jest-formatting/recommended",
+    "plugin:security/recommended"
+  ],
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "ts": "never"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "lines-between-class-members": "off",
+    "no-dupe-class-members": "off",
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }]
+  }
+}
