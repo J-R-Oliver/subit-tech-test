@@ -1,0 +1,5 @@
+{
+  "watch": ["src"],
+  "exec": "npm run lint && ts-node src/listen.ts",
+  "ext": "ts"
+}
