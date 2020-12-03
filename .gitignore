@@ -1,0 +1,15 @@
+# dependencies
+node_modules
+
+# build
+build
+coverage
+*.tsbuildinfo
+
+# logs
+*.log
+
+# misc
+.DS_STORE
+.vscode
+.env*
