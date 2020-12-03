@@ -1,0 +1,8 @@
+# Default ignore everything
+*
+
+# Add files or folders starting with !
+!src
+!package*.json
+!ormconfig.ts
+!tsconfig.json
