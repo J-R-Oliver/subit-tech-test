@@ -5,7 +5,7 @@
 <table>
 <tr>
 <td>
-A REST API for storing and retrieving employees, departments and job titles written in TypeScript. Designed to demonstrate SOLID design principles with the repository, data mapper and request-response patterns using dependency injection and IoC.
+A REST API for storing and retrieving employees, departments and job titles written in TypeScript. This is a contrived example designed to demonstrate SOLID design principles with the repository, data mapper and request-response patterns using dependency injection and IoC.
 </td>
 </tr>
 </table>
