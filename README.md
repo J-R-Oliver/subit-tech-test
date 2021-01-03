@@ -27,7 +27,7 @@ To start, please `fork` and `clone` the repository to your local machine. First 
 npm install
 ```
 
-To start the database, execute the `docker-compose.test` file. This will start _PostgreSQL_ in a _Docker_ container.
+To start the database, execute the `docker-compose` file. This will start _PostgreSQL_ in a _Docker_ container.
 
 ```
 npm run db-start
@@ -119,7 +119,7 @@ A `Dockerfile` has been provided and a _Docker_ image can be created with the fo
 docker build -t subit-tech-test .
 ```
 
-A second `docker-compose file` has been provided to start the node server in a container, as well as an instance of the database (unseeded) and networks them together. **Please Note**: If you have previously run `docker-compose.test` the test database, and all seed data, will persist and be used.
+The following command will start both the _Node_ and _PostgreSQL_ containers, and build the _Node_ image if `docker build` hasn't been previously run.
 
 ```
 npm run start-dev-docker
