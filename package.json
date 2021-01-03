@@ -17,8 +17,8 @@
     "node": ">=12.0.0"
   },
   "scripts": {
-    "docker-remove": "docker-compose -f docker-compose.test.yml -f docker-compose.dev.yml down --rmi all",
-    "db-start": "docker-compose -f docker-compose.test.yml up -d",
+    "docker-remove": "docker-compose down --rmi all -v",
+    "db-start": "docker-compose up -d postgres",
     "db-schema-drop": "ts-node ./node_modules/typeorm/cli.js schema:drop",
     "db-schema-sync": "ts-node ./node_modules/typeorm/cli.js schema:sync",
     "db-seed": "ts-node ./node_modules/typeorm-seeding/dist/cli.js seed",
@@ -29,7 +29,7 @@
     "test-coverage": "serve coverage/lcov-report",
     "build": "tsc",
     "start-dev": "nodemon",
-    "start-dev-docker": "docker-compose -f docker-compose.dev.yml up -d",
+    "start-dev-docker": "docker-compose up -d",
     "start": "node build/src/listen.js"
   },
   "husky": {
