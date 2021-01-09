@@ -42,7 +42,7 @@ npm run db-schema-sync && npm run db-seed
 The following command will start the server in development mode listening on the default port of 9090. Whenever a change is made the server will restart.
 
 ```
-npm start-dev
+npm run start-dev
 ```
 
 ## Endpoints
